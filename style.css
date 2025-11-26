@@ -1,0 +1,94 @@
+.nav-link {
+    text-decoration: none; /* supprime le soulignement chatgpt*/
+    color:rgb(191, 191, 212);           /* couleur du lien chatgpt*/
+}
+
+.nav-link:hover {
+    color:rgb(235, 208, 151);        /* couleur au survol chagpt */
+}
+
+
+@media (max-width: 768px) {
+    img {
+        width: 300px; /* plus grande sur petits écrans */
+    }
+  }
+
+img:hover {
+ transform: scale(1.03);/*zom sur l'image quand on passe la souris dessus, pas possible avec bootstrap, solution : chatgpt, zoom léger*/
+}
+
+
+
+@font-face {
+  font-family:Yantramanav-Light ;
+  src: url(Yantramanav/Yantramanav-Light.ttf);
+}
+
+@font-face {
+  font-family: Yantramanav-Regular ;
+  src: url(Yantramanav/Yantramanav-Regular.ttf);
+}
+
+h1 {
+  font-family: 'Yantramanav-Light' ;
+  color: beige;
+}
+
+body {
+  font-family: 'Yantramanav-Regular';
+  background-color: rgb(44, 49, 47)!important; /*j'ai ajouté !important pour que la règle s'applique, elle ne s'appliquait pas avec la règle bootstrap déjà définie dans body*/
+  color: beige;
+}
+
+h2 {
+  font-family: 'Yantramanav-Light' ;
+  color: beige;
+}
+
+h3 {
+  font-family: 'Yantramanav-Light' ;
+  color: beige;
+}
+
+ul {
+    flex-wrap: wrap; /* pour que les éléments soient sur plusieurs lignes s'ils dépassent le cadre (pour les petits écrans) */
+}
+
+section a {             
+    overflow-wrap: break-word;  /* pour que les liens URL passent à al ligen quand la page rétrécit*/
+}
+
+table th {
+    vertical-align: top; /* pour que la première valeur de mon tableau soit alignée en haut */
+}
+
+/*responsivité de la page*/
+
+/*
+
+
+aside {
+  flex: 1; /*l'encart prend 1 portion de la page*
+}
+/*
+main {
+    flex: 3;    /* l'encart prend 3 portions de la page 
+}*/
+/*
+@media (min-width: 768px) { /*cette variable CSS s'applique seulement si l'écran fait minimum 1024px
+    aside {    
+        position: sticky; 
+        top: 20px;   /*petit décalage de la  side bar qui reste collée
+    }
+}
+ /*
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+  .container {
+  overflow: visible !important;
+}
+*/

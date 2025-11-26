@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--pour que la page sois responsive même sur les smartphones-->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"><!--ce script importe le CSS  de Bootstrap-->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Grace Hopper</title>
+</head>
+<body class="p-3">
+    <!--au début j'avais mis la couleur du fond avec boostrap : "text-bg-secondary" mais j'ai décidé de la mettre avec du CSS pour la modifier plus facilement en fonction des éléments html ajoutés pour que les couleurs soient cohérentes -->
+
+    <div class="container-md"> <!--fluid = pour que le texte soit en pleine page et pas juste au centre-->
+        
+        <header class="row text-center"><!--crée une ligne flexible, sépare l'es/pace en 12-->
+            <div class="col-12"><!--séparation de l'espace de la page en 12 colonnes-->
+                
+                <h1>GRACE HOPPER</h1>
+                <nav class="navbar navbar-expand-md fixed">
+                   <div class="container d-flex flex-wrap justify-content-center">
+                     <ul class="d-flex list-unstyled gap-3">
+                        <!--enlever les puces + rend la liste flexbox + ajoute de l'espace entre les éléments-->
+                        <li><a class="nav-link" href="#Résumé">Résumé</a></li>
+                        <!--pour l'instant j'ai mis cette class bootstrap pour essayer de changer la couleur du texte quand la souris survole mais ce n'est pas exacement ce que je veux faire, ca accentue seulement la couleur mais ca ne la change pas-->
+                        <li><a class="nav-link" href="#Biographie">Biographie</a></li>
+                        <li><a class="nav-link" href="#Distinctions">Distinctions</a></li>
+                        <li><a class="nav-link" href="#Hommages">Hommages</a></li>
+                        <li><a class="nav-link" href="#Anecdote">Anecdotes</a></li>
+                        <li><a class="nav-link" href="#Notes et références">Notes et références</a></li>
+                    </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>  
+
+    <div class="row mt-4"> <!--création d'un row pour y mettre le contenu principal et l'encart côte à côte-->
+        <main class="col-md-8 order-1 order-md-0 border border-light border-3 rounded-4 border-opacity-50 p-3"><!--le order-1 : s'applique aux écrans petits et le 1 le fait s'afficher après
+            le order-md-0 s'applique aux écrans plus grands et le 0 le fait s'afficher avant
+            border-dark : couleur de la bordure 
+            border-3 : épaisseur 
+            rounded-4 : rondeur des bords
+            p-3 : pour que la bordure soit plus espacée du texte-->
+
+            <section id="Résumé"> <!--identification des sections pour les rappeller en haut de la page-->
+                <p>Grace Murray Hopper est une informaticienne américaine et Rear admiral (lower half) de la marine américaine, née le 9 décembre 1906 à New York et morte le 1er janvier 1992 dans le comté d'Arlington. Elle est la conceptrice du premier compilateur en 1951 (A-0 System) et du langage Cobol en 1959.</p>
+            </section>       
+
+            <section id="Biographie">
+                <h2>Biographie</h2>
+                <h3>Jeunesse</h3>
+
+                    <p>Grace Brewster Murray est née le 9 décembre 1906 à New York. Elle commence à étudier les mathématiques, la physique et l'économie au Vassar College, et en sort diplômée d'un Bachelor of Art en mathématiques et physique en 1928. Elle enseigne au Vassar tout en obtenant son Master of Arts, en 1930, puis son doctorat, en 1934, en mathématiques à l'université Yale.
+
+                    En 1930, elle épouse Vincent Foster Hopper, un professeur de littérature de l'université NYU. Le couple, qui n'a pas d'enfants, divorce en 19453.</p>
+
+                <h3>Carrière</h3>
+
+                    <p>En 1943, Grace Hopper s'engage dans la marine américaine. Promue au grade de lieutenant, elle est affectée l'année suivante au Bureau of Ordnance Computation Project de l'université Harvard. Elle travaille dans l'équipe de Howard Aiken sur l'ordinateur Harvard Mark I. Elle fait partie du premier groupe, comptant trois personnes, apprenant à le programmer3.
+
+                    À la fin de la Seconde Guerre mondiale, elle quitte le service actif de la marine, mais continue à travailler au développement des ordinateurs Harvard Mark II puis Harvard Mark III pour le compte du Computation Laboratory d'Harvard3.
+
+                    En 1949, Grace Hopper est employée par la Eckert-Mauchly Computer Corporation (en) (EMCC) et rejoint l'équipe développant UNIVAC I à Philadelphie. En 1950, la compagnie est rachetée par Remington Rand. Hopper conçoit l'année suivante le premier compilateur pour UNIVAC I, nommé A-0 System3. En 1955, elle invente le langage FLOW-MATIC aussi appelé B-0 (Business Language Version 0) pour l'UNIVAC I. À partir de 1957, elle travaille pour IBM, où elle défend l'idée qu'un programme devrait pouvoir être écrit dans un langage proche de l'anglais plutôt que d'être calqué sur le langage machine, comme l'assembleur. De cette idée naît le langage Cobol en 1959.
+
+                    En 1966, conformément au règlement en vigueur, elle doit quitter la Navy après avoir atteint l'âge de 60 ans, mais est rappelée l'année suivante5. Au cours des années 1970, elle mène les travaux d'établissement de normes pour les ordinateurs, en particulier les premiers langages de programmation évolués : Fortran et Cobol.
+
+                    Grace Hopper reste dans la Marine jusqu'en 1986, date à laquelle elle prend sa retraite avec le grade de Rear admiral (lower half). Elle est alors l'officier le plus âgé de la marine américaine6.
+
+                    Jusqu'à son décès en 1992, elle est employée comme consultante externe par Digital Equipment, pour des conférences sur les débuts de l'informatique5. Elle est enterrée avec les honneurs militaires au cimetière national d'Arlington7.</p>
+            
+            </section>
+
+            <section id="Distinctions">
+                <h2>Distinctions</h2>
+
+                    <p>En 1986, Grace Hopper est décorée de la Defense Distinguished Service Medal, plus haute distinction existante pour les non-combattants5. En 1991, elle reçoit la National Medal of Technology pour « ses contributions novatrices dans le développement de langages de programmation »8. En 1983 elle est lauréate du prix Ada-Lovelace9.
+
+                    Le 22 novembre 2016, Barack Obama lui décerne à titre posthume la médaille présidentielle de la Liberté10.</p>
+
+            </section>
+        
+            <section id="Hommages">
+                <h2>Hommages</h2>
+
+                    <p>En 1973, Grace Hopper est nommée « membre émérite » (distinguished fellow) de la British Computer Society5. Elle est inscrite au National Women's Hall of Fame en 19947. Près d'une cinquantaine de doctorats honoraires lui ont été décernés5. En 1997, un destroyer de la classe Arleigh Burke, est baptisé USS Hopper (DDG-70)3.
+
+                    Une conférence technique internationale, organisée depuis 1994 par l'Institut Anita-Borg, est baptisée Grace Hopper Celebration of Women in Computing (en) en son honneur.
+
+                    La toponymie mondiale lui rend aussi hommage. En France, le Laboratoire d'informatique de l'École polytechnique a baptisé une de ses salles en son hommage. Aux États-Unis, l'académie navale a baptisé son centre de cyberdéfense en son hommage11. Au Québec, une future rue de Montréal porte officiellement son nom depuis le 3 mars 201712 (cependant, la rue située au Technoparc de Saint-Laurent n'était toujours pas construite en date de février 2024). En France, la place Grace-Murray-Hopper (13e arrondissement de Paris), lui rend hommage13 dans le nouveau quartier de la station F. La promotion 2018-2021 de la MIAGE de Sophia-Antipolis est nommée en son honneur.
+
+                    L'astéroïde (5773) Hopper porte également son nom.
+
+                    En 2022, la société de calcul informatique Nvidia lui dédie sa dernière microarchitecture.</p>
+            </section>
+
+            <section id="Anecdote">
+                <h2>Anecdote</h2>
+
+                    <p>La popularisation du terme bug est attribuée à Grace Hopper. En effet, bien que l'utilisation de ce terme soit attestée dès 187814, la présence d'un insecte (bug) dans l'ordinateur Mark II, sur lequel travaillait Hopper, a permis la consolidation définitive du terme pour désigner un problème informatique.
+                    
+                    Une carnet d'annotations manuscrites avec un diptère mort fixé avec un adhésif
+                    
+                    Journal conservé à la Smithsonian Institution.
+                    
+                    Néanmoins, comme le mentionne Hopper elle-même, elle n'était pas présente lorsque son équipe a découvert l'insecte dans l'ordinateur15,16,17.</p>
+
+            </section>
+
+            <section id="Notes et références">
+                <h2>Notes et références</h2>
+
+                    <ol>
+                        
+                        <li><a href="http://www.computerhistory.org/collections/catalog/102702026">http://www.computerhistory.org/collections/catalog/102702026"[archive]</a>(consulté le 21 décembre 2016)</li> 
+                    
+                        <li><a href="http://sirismm.si.edu/EADpdfs/NMAH.AC.0324.pdf">http://sirismm.si.edu/EADpdfs/NMAH.AC.0324.pdf [archive] </a>(consulté le 21 décembre 2016)</li>
+                    
+                        <li>(en) Susan Ware (dir.), Stacy Braukman et al., Notable American Women : A Biographical Dictionary : Completing the Twentieth Century, vol. 5, Harvard University Press, 2005, 768 p. (ISBN 978-0-674-01488-6, présentation en ligne [archive], lire en ligne [archive]), p. 309-311</li>
+                    </ol>
+            </section>
+        </main>
+    
+        <aside class="col-md-4 order-0 order-md-1" ><!--md-4 = colonne pour utiliser boostrap, px
+            crée une colonne sur le coté, colonne qui prend 4/12 de l'écran
+            order-0 : (la classe order s'applique aux petits écrans), s'affiche en premier 
+            order-md-1 : le md s'applique aux écran plus grand et le -1 : s'affiche après 
+            position-sticky : l'élément reste collé 
+            top-0 : depuis le haut de la page -->
+            <div class="sticky-md-top"> <!--j'ai eu beaucoup de mal à trouver comment faire que l'encart reste sur l'écran même quand on fait défiler la page.
+                je suis allée dans la section Positions de bootstrap et j'ai ben mis "sticky-md-top" mais dans <aside> class je n'avais pas compris qu'il fallait créer une div à l'intérieur de <aside> j'ai testé plusieurs choses avant de comprendre, 
+                    j'ai tenté de créer cet effet dans un fichier CSS mais ca ne fonctionnit pa non plus car ça interférait avec le bootstra. j'ai finalement compris ce qui n'allai pas--> 
+                <figure class="img-container">
+                    <img src="Commodore_Grace_M._Hopper,_USN_(covered).jpg" class="rounded img-fluid" 
+                    alt="Grace Hopper en 1984" 
+                    style="width: 100%; max-width:none" 
+                    class="img-fluid mb-2"> 
+                    <!--taille d'une icone--><!--img-fluid : rendre l'image responsive elle garde la même taille peu importe la taille de la page web
+                rounded : arrondit les bords de l'image, width:100% pour que l'image prenne toute la largeur du conteneur-->
+                    <figcaption>
+                        <i>Grace Hopper en 1984</i>
+                    </figcaption>
+                </figure>
+
+            
+
+            <table class="mt-2"><!--au début j'avais organisé le tout dans une liste mais ce n'était aps assez structuré au niveau du placemebt des éléments
+                j'ai décidé qu'un tableau était mieux organisé et clair. Lorsqu'il y avait plusieurs éléments pour une seule catégorie, j'ai créé une liste dans le tableau en enlevant les puces-->
+                <tr>
+                    <th scope="row">Nom de naissance</th>
+                    <td> Grace Brewster Murray</td>
+                </tr>
+                <tr>
+                    <th scope="row">Surnom</th>
+                    <td>Amazing Grace</td>
+                </tr>
+                <tr>
+                    <th scope="row">Naissance</th>
+                    <td>
+                        9 décembre 1906<br>
+                        New York, Etats-Unis
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Décès</th>
+                    <td>1er janvier 1992 (à 85 ans) <br>
+                        Comté d'Arlignton, Etats-Unis
+                </td>
+                </tr>
+                <tr>
+                    <th scope="row">Sépulture</th>
+                    <td>Cimetière national d'Arlignton (7 janvier 1992)</td>
+                </tr>
+                <tr>
+                    <th scope="row">Nationalité</th>
+                    <td>américaine <img src="Flag_of_the_United_States.svg" width="20" height="20"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Activités</th>
+                    <td>Mathématicienne, professeure d’université, programmeuse, informaticienne, officier de marine, physicienne</td>
+                </tr>
+                <tr>
+                    <th>Période d'activité</th>
+                    <td>A partir de 1943</td>
+                </tr>
+                <tr>
+                    <th>Formation</th>
+                    <td>
+                            Wardlaw-Hartridge School (en) (1923-1924)<br>
+                            Vassar College (licence (en)) (1924-1928)<br>
+                            Université Yale (maîtrise (en)) (1928-1930)<br>
+                            Université Yale (doctorat) (jusqu'en 1934)
+                    </td>
+                </tr>
+                </table>
+            </div>
+        </aside>
+    </div><!--la responsibvité de ma page ne fonctionnait pas car j'avais oublié de fermer la div du row, croyant l'avoir déjà fermé après le footer, or c'était celle du container, ce qui brisait la mise en page et empêchait le flexbox de fonctionner-->
+
+    <footer></footer><!--pied de la page si besoin avec des onglets à propos etc-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- importation du script bootstrap pour l'utiliser dans mon code -->
+</body>
+</html>
+
+<!--difficultés à comprendre comment rendre la page responsive avec bootstrap et le modèle flexbox
+difficulté à rendre l'encart responsif à la page
+finalement j'ai préféré le faire en CSS basique plutot qu'avec Bootstrap
+commentaire général sur la construction du code : 
+j'ai tenté d'utiliser bootstrap pour toute la mise en page de ma page web et le style, mais je me suis rendue compte
+que bootstrap était surtout utile pour le placement des éléments dans ma page, et donc j'au utilisé ensuite une feuille CSS
+pour styliser ma page. J'ai utilisé bootstrap surtout pour la structure. Je n'ai aps trouvé certains éléments de style dans la documentation de Bootstrap
+comme par exemple les effets "hover" dans la barre de navigation : plus simple avec le CSS -->
